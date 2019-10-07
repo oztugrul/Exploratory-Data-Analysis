@@ -12,7 +12,7 @@ date_time<-paste(data_subset$Date,data_subset$Time)
 
 data_subset$Date_Time<-as.POSIXct(date_time)
 
-plot(data_subset$Date_Time,data_subset$Sub_metering_1,type="l",ylab="Global Active Power (kilowatts)",xlab="")
+plot(data_subset$Date_Time,data_subset$Sub_metering_1,type="l",ylab="Energy sub metering",xlab="")
 
 lines(data_subset$Date_Time,data_subset$Sub_metering_2,col="red")
 
